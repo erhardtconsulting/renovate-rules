@@ -1,0 +1,49 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "automerge": false,
+  "ignoreTests": true,
+  "ignorePaths": [
+    ".sops.yaml",
+    "**/*.enc.yaml"
+  ],
+  "flux": {
+    "fileMatch": [
+      "infrastructure/base/.+\\.yaml$",
+      "apps/.+\\.yaml$"
+    ]
+  },
+  "kubernetes": {
+    "fileMatch": [
+      "infrastructure/base/.+\\.yaml$",
+      "apps/.+\\.yaml$"
+    ]
+  },
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "apps/.+\\.yaml$",
+        "infrastructure/base/.+\\.yaml$"
+      ],
+      "matchStrings": [
+        "repository: (?<depName>.*?)(\\n|\\s)+tag: (?<currentValue>[0-9\\.]+)(@sha256:)?(?<digest>[a-zA-Z0-9:]+)?"
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": [
+        "apps/.+/kustomization\\.yaml$",
+        "infrastructure/base/.+/kustomization\\.yaml$"
+      ],
+      "matchStrings": ["https://raw\\.githubusercontent\\.com/(?<depName>[^/]*\\/[^/]*)/(?<currentValue>.*?)/"],
+      "datasourceTemplate": "github-tags"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["renovate/renovate"],
+      "automerge": true
+    }
+  ]
+}
