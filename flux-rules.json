@@ -6,6 +6,14 @@
     ".sops.yaml",
     "**/*.enc.yaml"
   ],
+  "helm": {
+    "repositories": [
+      {
+        "name": "bjw-s",
+        "url": "https://bjw-s.github.io/helm-charts/"
+      }
+    ]
+  },
   "flux": {
     "fileMatch": [
       "infrastructure/base/.+\\.yaml$",
@@ -44,6 +52,11 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["renovate/renovate"],
       "automerge": true
+    },
+    {
+      "matchDatasources": ["helm"],
+      "matchPackageNames": ["app-template"],
+      "enabled": true
     }
   ]
 }
