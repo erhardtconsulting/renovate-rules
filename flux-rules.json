@@ -49,8 +49,14 @@
   ],
   "packageRules": [
     {
+      "matchDepTypes": ["action"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
       "matchDatasources": ["docker"],
       "matchPackageNames": ["renovate/renovate"],
+      "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     },
     {
