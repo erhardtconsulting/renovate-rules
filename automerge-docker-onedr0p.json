@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/onedr0p/*"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "automerge": true,
+      "ignoreTests": true
+    }
+  ]
+}

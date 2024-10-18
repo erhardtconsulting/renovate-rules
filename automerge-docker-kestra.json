@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["kestra/kestra"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "automerge": true,
+      "ignoreTests": true
+    },
+    {
+      "matchDatasources": ["helm"],
+      "matchPackageNames": ["kestra"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "ignoreTests": true
+    }
+  ]
+}

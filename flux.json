@@ -1,0 +1,35 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>erhardtconsulting/renovate-rules:default",
+    "github>erhardtconsulting/renovate-rules:automerge-docker-chrootlogin",
+    "github>erhardtconsulting/renovate-rules:automerge-docker-erhardtconsulting",
+    "github>erhardtconsulting/renovate-rules:automerge-docker-ihatemoney",
+    "github>erhardtconsulting/renovate-rules:automerge-docker-kestra",
+    "github>erhardtconsulting/renovate-rules:automerge-docker-onedr0p",
+    "github>erhardtconsulting/renovate-rules:automerge-docker-renovate",
+    "github>erhardtconsulting/renovate-rules:helper-docker",
+    "github>erhardtconsulting/renovate-rules:helper-helmrelease-chart"
+  ],
+  "ignoreTests": true,
+  "ignorePaths": [
+    ".sops.yaml",
+    "**/*.enc.yaml"
+  ],
+  "flux": {
+    "fileMatch": ["\\.yaml$"]
+  },
+  "kubernetes": {
+    "fileMatch": ["\\.yaml$"]
+  },
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.yaml$"],
+      "matchStrings": [
+        "image:\\s+repository: (?<depName>\\S+)\\s+tag: (?<currentValue>[^@\\s]+)(@(?<digest>\\S+))?\\s"
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    }
+  ]
+}

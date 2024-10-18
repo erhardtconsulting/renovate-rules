@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["\\.yaml$"],
+      "matchStrings": [
+        "image:\\s+repository:[^\\w]+(?<depName>[\\w\\.\\/\\-\\_]+)[^\\w]+tag:[^\\w]+(?<currentValue>[\\w\\.\\/\\-\\_]+)(@(?<currentDigest>[\\w:]+))?",
+        "image:[^\\w]+(?<depName>[\\w\\.\\/\\-\\_]+):(?<currentValue>[\\w\\.\\/\\-\\_]+)(@(?<currentDigest>[\\w:]+))?"
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    }
+  ]
+}

@@ -21,12 +21,12 @@ To use a custom rule in your Renovate configuration, add it to your `.renovate.j
 {
   "extends": [
     "config:base",
-    "github>erhardtconsulting/renovate-rules//my-rules.json"
+    "github>erhardtconsulting/renovate-rules:my-rules"
   ]
 }
 ```
 
-Replace `github>erhardtconsulting/renovate-rules//my-rules.json` with the actual path to your custom rule file.
+Replace `github>erhardtconsulting/renovate-rules:my-rules` with the actual path to your custom rule file.
 
 ## Contributing
 
