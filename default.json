@@ -6,7 +6,8 @@
     ":automergeDisabled",
     "docker:enableMajor",
     "github>erhardtconsulting/renovate-rules:semantic-commits",
-    "github>erhardtconsulting/renovate-rules:automerge-gh-actions"
+    "github>erhardtconsulting/renovate-rules:automerge-gh-actions",
+    "github>erhardtconsulting/renovate-rules:custommanager-docker-dependencies.json"
   ],
   "dependencyDashboardTitle": "Renovate Dashboard 🤖"
 }
