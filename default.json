@@ -7,9 +7,9 @@
     ":disableRateLimiting",
     "docker:enableMajor",
     "security:openssf-scorecard",
-    "github>erhardtconsulting/renovate-rules:semantic-commits",
     "github>erhardtconsulting/renovate-rules:automerge-gh-actions",
-    "github>erhardtconsulting/renovate-rules:custommanager-docker-dependencies.json"
+    "github>erhardtconsulting/renovate-rules:custommanager-docker-dependencies.json",
+    "github>erhardtconsulting/renovate-rules:ui-semantic-commits"
   ],
   "dependencyDashboardTitle": "Renovate Dashboard 🤖"
 }
