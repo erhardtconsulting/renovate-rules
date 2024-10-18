@@ -8,7 +8,7 @@
     "github>erhardtconsulting/renovate-rules:automerge-docker-kestra",
     "github>erhardtconsulting/renovate-rules:automerge-docker-onedr0p",
     "github>erhardtconsulting/renovate-rules:automerge-docker-renovate",
-    "github>erhardtconsulting/renovate-rules:helper-docker",
+    "github>erhardtconsulting/renovate-rules:helper-kubernetes-docker",
     "github>erhardtconsulting/renovate-rules:helper-helmrelease-chart"
   ],
   "ignoreTests": true,
