@@ -6,9 +6,10 @@
     "github>erhardtconsulting/renovate-rules:automerge-docker-erhardtconsulting",
     "github>erhardtconsulting/renovate-rules:automerge-docker-homepage",
     "github>erhardtconsulting/renovate-rules:automerge-docker-ihatemoney",
-    "github>erhardtconsulting/renovate-rules:automerge-docker-kestra",
     "github>erhardtconsulting/renovate-rules:automerge-docker-onedr0p",
     "github>erhardtconsulting/renovate-rules:automerge-docker-renovate",
+    "github>erhardtconsulting/renovate-rules:automerge-grafana",
+    "github>erhardtconsulting/renovate-rules:automerge-kestra",
     "github>erhardtconsulting/renovate-rules:helper-helmrelease-chart",
     "github>erhardtconsulting/renovate-rules:helper-kubernetes-docker"
   ],
