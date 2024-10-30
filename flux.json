@@ -19,6 +19,12 @@
     ".sops.yaml",
     "**/*.enc.yaml"
   ],
+  "enabledManagers": [
+    "flux",
+    "github-actions",
+    "kubernetes",
+    "regex"
+  ],
   "flux": {
     "fileMatch": ["\\.yaml$"]
   },
