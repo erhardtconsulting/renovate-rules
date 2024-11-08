@@ -24,15 +24,5 @@
   },
   "kubernetes": {
     "fileMatch": ["\\.yaml$"]
-  },
-  "regexManagers": [
-    {
-      "fileMatch": ["\\.yaml$"],
-      "matchStrings": [
-        "image:\\s+repository: (?<depName>\\S+)\\s+tag: (?<currentValue>[^@\\s]+)(@(?<digest>\\S+))?\\s"
-      ],
-      "datasourceTemplate": "docker",
-      "versioningTemplate": "docker"
-    }
-  ]
+  }
 }
