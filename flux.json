@@ -13,6 +13,7 @@
     "github>erhardtconsulting/renovate-rules:automerge-docker-telegraf",
     "github>erhardtconsulting/renovate-rules:automerge-grafana",
     "github>erhardtconsulting/renovate-rules:automerge-kestra",
+    "github>erhardtconsulting/renovate-rules:group-docker-appflowy",
     "github>erhardtconsulting/renovate-rules:helper-helmrelease-chart",
     "github>erhardtconsulting/renovate-rules:helper-kubernetes-docker"
   ],
