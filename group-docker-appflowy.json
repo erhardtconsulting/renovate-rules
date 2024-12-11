@@ -12,7 +12,7 @@
         "docker.io/appflowyinc/appflowy_worker",
         "docker.io/appflowyinc/gotrue"
       ],
-      "matchUpdateTypes": ["major","minor", "patch", "digest"],
+      "matchUpdateTypes": ["major", "minor", "patch", "digest"],
       "automerge": false,
       "ignoreTests": true
     }
