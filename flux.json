@@ -5,6 +5,7 @@
     "github>erhardtconsulting/renovate-rules:automerge-docker-chrootlogin",
     "github>erhardtconsulting/renovate-rules:automerge-docker-erhardtconsulting",
     "github>erhardtconsulting/renovate-rules:automerge-docker-gatus",
+    "github>erhardtconsulting/renovate-rules:automerge-docker-ghostfolio",
     "github>erhardtconsulting/renovate-rules:automerge-docker-homepage",
     "github>erhardtconsulting/renovate-rules:automerge-docker-ihatemoney",
     "github>erhardtconsulting/renovate-rules:automerge-docker-onedr0p",
