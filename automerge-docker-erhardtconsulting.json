@@ -7,6 +7,13 @@
       "matchUpdateTypes": ["minor", "patch", "digest"],
       "automerge": true,
       "ignoreTests": true
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/erhardtconsulting/init-postgres"],
+      "major": {
+        "enabled": false
+      }
     }
   ]
 }
