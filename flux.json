@@ -9,6 +9,7 @@
     "github>erhardtconsulting/renovate-rules:automerge-docker-homepage",
     "github>erhardtconsulting/renovate-rules:automerge-docker-ihatemoney",
     "github>erhardtconsulting/renovate-rules:automerge-docker-onedr0p",
+    "github>erhardtconsulting/renovate-rules:automerge-docker-open-webui",
     "github>erhardtconsulting/renovate-rules:automerge-docker-renovate",
     "github>erhardtconsulting/renovate-rules:automerge-docker-telegraf",
     "github>erhardtconsulting/renovate-rules:automerge-grafana",
