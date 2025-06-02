@@ -13,5 +13,11 @@
   ],
   "kubernetes": {
     "fileMatch": ["\\.yaml$"]
+  },
+  "argocd": {
+    "managerFilePatterns": [
+      "/^clusters/.+\\.yaml$/",
+      "/^infrastructure/chart/.+\\.yaml$/"
+    ]
   }
 }
