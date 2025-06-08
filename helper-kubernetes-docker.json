@@ -37,17 +37,6 @@
         "imageName:\\s*(?<depName>ghcr\\.io/cloudnative-pg/postgresql):(?<currentValue>[^\\s\\n]+)"
       ],
       "datasourceTemplate": "docker",
-      "versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)-(?<patch>\\d+)$"
-    },
-    {
-      "customType": "regex",
-      "fileMatch": [
-        "cluster\\.ya?ml$"
-      ],
-      "matchStrings": [
-        "imageName:\\s*(?<depName>ghcr\\.io/cloudnative-pg/postgresql):(?<currentValue>[^\\s\\n]+)"
-      ],
-      "datasourceTemplate": "docker",
       "versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)-(?<patch>\\d+)-(?<suffix>.+)$"
     }
   ]
