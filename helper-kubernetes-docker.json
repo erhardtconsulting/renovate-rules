@@ -37,7 +37,8 @@
         "imageName:\\s*(?<depName>ghcr\\.io/cloudnative-pg/postgresql):(?<currentValue>[^@\\s\\n]+)(?:@(?<currentDigest>sha256:[a-f0-9]{64}))?"
       ],
       "datasourceTemplate": "docker",
-      "versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)-(?<patch>\\d+)(-.*)?$"
+      "versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)-(?<patch>\\d+)(-.*)?$",
+      "autoReplaceStringTemplate": "imageName: {{{depName}}}:{{{newValue}}}{{{#if newDigest}}}@{{{newDigest}}}{{{/if}}}"
     }
   ]
 }
