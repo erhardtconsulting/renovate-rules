@@ -1,21 +1,21 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
     "github>erhardtconsulting/renovate-rules:default",
     "github>erhardtconsulting/renovate-rules:automerge-docker-erhardtconsulting",
     "github>erhardtconsulting/renovate-rules:helper-helmrelease-chart",
     "github>erhardtconsulting/renovate-rules:helper-kubernetes-docker"
   ],
-  "ignoreTests": true,
-  "ignorePaths": [
+  ignoreTests: true,
+  ignorePaths: [
     ".sops.yaml",
     "**/*.enc.yaml"
   ],
-  "kubernetes": {
-    "fileMatch": ["\\.yaml$"]
+  kubernetes: {
+    fileMatch: ["\\.yaml$"]
   },
-  "argocd": {
-    "managerFilePatterns": [
+  argocd: {
+    managerFilePatterns: [
       "/^clusters/.+\\.yaml$/",
       "/^infrastructure/chart/.+\\.yaml$/"
     ]
